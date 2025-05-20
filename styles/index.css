@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ffddaa;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-family: "Satisfy", cursive;
+
+}
+h3, h4, h5, h6, p{
+    font-family: "Ancizar Serif", serif;
+}
+
+#banner-container{
+    position: relative;
+    background-color: #325380;
+    margin-bottom: 0;
+}
+
+nav{
+    position: absolute;
+    left: 80%;
+    width: 100%;
+    z-index: 10;
+    padding: 0 !important;
+    margin: 0 !important;
+    top: 0;
+}
+
+.navbar-custom{
+    background-color: #325380;
+    color: white;
+    margin: 0 !important;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 40px;
+}
+
+.navbar a{
+    color: white;
+}
+
+
+.container-fluid{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#banner{
+    position: relative;
+    background-color: #ffddaa;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    
+}
+#banner video{
+    margin: 0;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+    padding: 0;
+}
+  
+#title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#space{
+    background-color: black;
+    height: 20px;
+    position: relative;
+    bottom: 15px;
+}
+
+#main-2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: space-around;
+}
+
+#collage{
+    margin-left: 100px;
+    width: 400px;
+}
+
+
+#three-big-words{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    margin-right: 300px;
+    margin-top: 5%;
+}
+
+#three-big-words p{
+    background-color: #386b48;
+    padding: 20px;
+    width: 250%;
+    color: white;
+    font-size: 1.44em;
+    border-radius: 40px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0 -100%); /*-----starts from 0 and goes to the left 100%-----*/
+
+    }
+
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.logos{
+    margin-top: 30px;
+    background-color: #ffddaa;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.logos:before, .logos:after{
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos:before{
+    left: 0;
+    background: linear-gradient(to left, rgb(255,255,255, 0), #ffddaa  );
+}
+
+.logos:after{
+    right: 0;
+    background: linear-gradient(to right, rgb(255,255,255, 0), #ffddaa  );
+}
+.logos-slide{
+display: inline-block;
+    animation: 110s slide infinite linear;
+}
+.logos-slide img{
+    height: 80px;
+    margin: 0 ;
+}
+
+.trim img{
+    margin-top: 50px;
+    height: 90px;
+    position: relative;
+    z-index: 1;
+}
+
+.lantern-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0px 0;
+    position: relative;
+    z-index: 1;
+    bottom: 80px;
+}
+
+.lantern{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line{
+    width: 20px;
+    background-color: brown;
+}
+
+.short{
+    height: 250px;
+}
+
+.long{
+    height: 200px;
+}
+
+.lantern-button{
+    height: 250px;
+    width: 250px
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 10px;
+}
+
+.red{
+    background-color: #b8320e;
+}
+.green{
+    background-color:#618f16;
+}
+
+.maroon{
+    background-color: #600e17;
+}
+
+.orange{
+    background-color: #e48e02;
+}
+
+.circle:hover{
+    transition: transform 0.5s ease-in-out, transform 0.5s ease-in-out;
+
+    transform: scale(1.2);
+}
+
+footer{
+    background-color: #600e17;
+    height: 20%;
+    
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#copyright{
+    text-align: center;
+    color: white;
+    
+}
+
+@media screen and (max-width: 800px) and (min-width: 400px) {
+   
+    .logos{
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 60px 0;
+    }
+}
+

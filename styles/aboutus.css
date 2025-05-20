@@ -1,0 +1,136 @@
+body{
+    background-color: #ffddaa;
+    margin: 0;
+    padding: 0;
+    
+}
+
+h2{
+    font-family: "Satisfy", cursive;
+
+}
+h3, h4, h5, h6, p{
+    font-family: "Ancizar Serif", serif;
+}
+
+#banner-container{
+    position: relative;
+    background-color: #325380;
+    margin-bottom: 0;
+}
+
+nav{
+    position: absolute;
+    top: 20px;
+    left: 65%;
+    width: 100%;
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-custom{
+    background-color: #325380;
+    color: white;
+    margin: 0 70px 0;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 40px;
+}
+
+.navbar a{
+    color: white;
+}
+
+
+.container-fluid{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.blob-banner{
+    background-color: #5d8967;
+    height: 350px;
+    width: 75%;
+    margin: auto;
+    margin-top: 2%;
+    text-align: center;
+    padding: 150px;
+    border-radius: 40px;
+}
+
+.banner-circle1{
+    border-radius: 50%;
+    background-color: #618f16;
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    top: 60px;
+    left: 10%;
+}
+
+.banner-circle2{
+    border-radius: 50%;
+    background-color: #618f16;
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    top: 370px;
+    right: 10%;
+}
+
+#space{
+    margin-top: 5%;
+    background-color: black;
+    height: 5px;
+    position: relative;
+    bottom: 15px;
+}
+
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+
+}
+
+.container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    background-color: #a69bb4;
+}
+
+.text-box{
+    padding: 20px 30px;
+    background-color: #b8320e;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+
+}
+
+
+footer{
+    background-color: #600e17;
+    height: 20%;
+    
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer h3{
+    margin-top: 20px;
+}
+
+#copyright{
+    text-align: center;
+    color: white;
+}
