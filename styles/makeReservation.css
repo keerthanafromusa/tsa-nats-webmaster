@@ -33,7 +33,7 @@ nav{
 
 
 .blob-banner{
-    background-image: url("../images/reservationCarpet.jpg");
+    background-image: url("../images/reservationCarpet2.png");
     background-size: cover;
     background-repeat: no-repeat;    
     height: 350px;
@@ -198,7 +198,8 @@ input{
 footer{
     background-color: #600e17;
     height: 20%;
-    
+    text-align: center;
+    width: 100%;
 }
 
 .info{
@@ -212,11 +213,29 @@ footer{
 
 footer h3{
     margin-top: 20px;
+    
+}
+
+footer img{
+    height: 40px;
+    width: 40px;
+    margin: 3px;
+}
+
+#socials{
+    display: flex;
+    flex-direction: column;
+}
+
+#copyright-container{
+    width: 100%;
 }
 
 #copyright{
     text-align: center;
     color: white;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 @media(max-width: 768px){

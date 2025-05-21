@@ -36,7 +36,7 @@ nav{
 }
 
 .blob-banner{
-    background-image: url("../images/redCarpetBg.jpg");
+    background-image: url("../images/redCarpetBg2.png");
     background-size: cover;
     background-repeat: no-repeat;    
     height: 350px;
@@ -59,7 +59,7 @@ nav{
 
 .banner-circle1{
     border-radius: 50%;
-    background-color: #81a4f6;
+    background-color: #637a8f;
     height: 120px;
     width: 120px;
     position: absolute;
@@ -69,7 +69,7 @@ nav{
 
 .banner-circle2{
     border-radius: 50%;
-    background-color: #81a4f6;
+    background-color: #637a8f;
     height: 120px;
     width: 120px;
     position: absolute;
@@ -149,7 +149,8 @@ nav{
 footer{
     background-color: #600e17;
     height: 20%;
-    
+    text-align: center;
+    width: 100%;
 }
 
 .info{
@@ -163,11 +164,29 @@ footer{
 
 footer h3{
     margin-top: 20px;
+    
+}
+
+footer img{
+    height: 40px;
+    width: 40px;
+    margin: 3px;
+}
+
+#socials{
+    display: flex;
+    flex-direction: column;
+}
+
+#copyright-container{
+    width: 100%;
 }
 
 #copyright{
     text-align: center;
     color: white;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 @media(max-width: 768px){
