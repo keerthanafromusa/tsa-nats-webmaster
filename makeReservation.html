@@ -7,7 +7,7 @@
     <title>Book A Table</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/bookatable.css">
+    <link rel="stylesheet" href="styles/makeReservation.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
 
 <body>
     <div class="banner-container">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid ">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,7 +42,7 @@
         <div class="banner-circle1">
         </div>
         <div class="blob-banner">
-            <h2>Book A Table</h2>
+            <h2>Make A Reservation</h2>
         </div>
         <div class="banner-circle2">
         </div>
@@ -53,10 +53,11 @@
         <div id="reservation-options">
             
             <div>
-                <div class="reseravation-item">
+                <div class="reseravation-item" id="table">
                     <div>
-                        <h4>Make a Reservation</h4>
-                    <p>Short description about the item. Yummy. Spicy. Allergens!!</p>
+                        <h4>Book A Table</h4>
+                    <p>Only for parties over 6.</p>
+                    <p>We strongly encourage you to book a table ahead of time, especially on weekends! All of our guests are valuable to us but we only have a limited amount of tables so please be mindful of this.</p>
                     </div>
                     <button type="submit" onclick="openPopup()">Book a Table</button>
                 </div>
@@ -66,9 +67,11 @@
                 <div class="reseravation-item">
                     <div>
                         <h4>Catering</h4>
-                    <p>Short description about the item. Yummy. Spicy. Allergens!!</p>
+                    <p>Catering orders must be placed at least 3 days in advance.</p>
+                    <p>Orders typically serve 20-50 people but details can be customized based on the order.</p>
+                    <p>Sufra staff will call you for further details about your order. Please submit a catering request form below!</p>
                     </div>
-                    <button type="submit" onclick="openPopupCatering()">Book Catering for an Event</button>
+                    <button type="submit" onclick="openPopupCatering()">Catering Request Form</button>
                 </div>
                 
             </div>
@@ -87,6 +90,10 @@
               <input type="tel" class="form-control" placeholder="Reservation Contact Number" aria-label="Reservation Contact Number" aria-describedby="basic-addon2">
           
             </div>
+
+            <div>
+              <input type="text" inputmode="numeric" pattern="\d*" id="" placeholder="Number of guests">
+          </div>
             <label for="datetime-picker">Select a date and time: </label>
             <input type="datetime-local" id="datetime-picker">
 
@@ -107,11 +114,29 @@
             </div>
             
             <div class="input-group mb-3">
-              <input type="tel" class="form-control" placeholder="Event Contact Number" aria-label="Event Contact Number" aria-describedby="basic-addon2">
+              <input type="tel" class="form-control" placeholder="Contact Number" aria-label="Contact Number" aria-describedby="basic-addon2">
             </div>
 
             <div>
-                <input type="text" inputmode="numeric" pattern="\d*" id="" placeholder="Amount of guests">
+                <input type="number" inputmode="numeric" pattern="\d*" id="" placeholder="Number of guests">
+            </div>
+
+            <div id="num-of-items">
+              <div>
+                <label for="appetizer-num-picker">Please select an approximate number of Appetizer Items:</label><input type="number" inputmode="numeric" pattern="\d*" id="appetizer-num-picker" placeholder="Number of Appetizers">
+              </div>
+              <div>
+                <label for="entrees-num-picker">Please select an approximate number of Entree Items:</label><input type="number" inputmode="numeric" pattern="\d*" id="entrees-num-picker" placeholder="Number of Entrees">
+              </div>
+              <div>
+                <label for="dessert-num-picker">Please select an approximate number of Dessert Items:</label><input type="number" inputmode="numeric" pattern="\d*" id="dessert-num-picker" placeholder="Number of Desserts">
+              </div>
+              <div>
+                <label for="entrees-num-picker">Please select an approximate number of Dessert Items: </label><input type="number" inputmode="numeric" pattern="\d*" id="entrees-num-picker" placeholder="Number of Entrees">
+              </div>
+              <div>
+                <label for="drinks-num-picker">Please select an approximate number of Drink Items: </label><input type="number" inputmode="numeric" pattern="\d*" id="drinks-num-picker" placeholder="Number of Drinks">
+              </div>
             </div>
             <label for="datetime-picker">Select a date and time: </label>
             <input type="datetime-local" id="datetime-picker">

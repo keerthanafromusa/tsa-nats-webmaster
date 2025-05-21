@@ -18,7 +18,6 @@ h3, h4, h5, h6, p{
     margin-bottom: 0;
 }
 
-
 nav{
     background-color: #002534;
     text-align: center;
@@ -28,15 +27,30 @@ nav{
     color: white;
 }
 
+.navbar-toggler{
+    border-color: white;
+}
+
 .blob-banner{
-    background-color: #5d8967;
+    background-image: url("../images/aboutUsCarpet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;    
     height: 350px;
     width: 75%;
     margin: auto;
     margin-top: 3%;
     text-align: center;
-    padding: 150px;
     border-radius: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.blob-banner h2{
+    font-size: 130px;
+    color: white;
 }
 
 .banner-circle1{
@@ -158,7 +172,7 @@ nav{
 
 .text-box{
     padding: 20px 30px;
-    background-color: #b8320e;
+    background-color: #d55835;
     position: relative;
     border-radius: 6px;
     font-size: 15px;
@@ -198,6 +212,30 @@ nav{
     left: -15px;
 }
 
+footer{
+    background-color: #600e17;
+    height: 20%;
+    
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer h3{
+    margin-top: 20px;
+}
+
+#copyright{
+    text-align: center;
+    color: white;
+}
+
 @media screen and (max-width:600px){
     .timeline{
         margin: 50px auto;
@@ -207,7 +245,7 @@ nav{
         left: 31px;
     }
 
-    .container{
+    .custom-container{
         width: 100%;
         padding-left: 80px;
         padding-right: 25px;
@@ -236,26 +274,36 @@ nav{
     }
 }
 
-footer{
-    background-color: #600e17;
-    height: 20%;
+@media(max-width: 768px){
+    .blob-banner h2{
+        font-size: 100px;
+    }
+    .banner-circle1, .banner-circle2{
+        display: none;
+    }
     
+    #menu-key{
+        padding: 10px;
+    }
+    #menu{
+        gap: 0 !important;
+    }
+
+    .info{
+        flex-direction: column;
+    }
 }
 
-.info{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
+@media(max-width: 480px){
+    .blob-banner h2{
+        font-size: 90px;
+    }
 
-footer h3{
-    margin-top: 20px;
-}
+    .banner-circle1, .banner-circle2{
+        display: none;
+    }
 
-#copyright{
-    text-align: center;
-    color: white;
+    .info{
+        flex-direction: column;
+    }
 }
