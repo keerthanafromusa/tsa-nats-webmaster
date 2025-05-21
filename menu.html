@@ -11,36 +11,38 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Dancing+Script:wght@400..700&family=Satisfy&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Dancing+Script:wght@400..700&family=Satisfy&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body>
     <div class="banner-container">
-        <nav class="navbar navbar-expand-lg navbar-custom">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="menu.html">Menu</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="aboutus.html">Book a Table</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="aboutus.html">About Us</a>
-                  </li>
-                </ul>
-              </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bookatable.html">Book a Table</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">About Us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </nav>
+        </nav>
 
         <div class="banner-circle1">
         </div>
@@ -52,32 +54,34 @@
 
     </div>
 
-    <div id="space">
-        <hr>
-    </div>
     <main>
-        <h2 class="menu-title">Appetizers</h2>
+
+        <div id="menu-categories">
+            <button><a href="#menu-appetizers">Appetizers</a></button>
+            <button><a href="#menu-entrees">Entrees</a></button>
+            <button><a href="#menu-desserts">Desserts</a></button>
+            <button><a href="#menu-drinks">Drinks</a></button>
+            <button><a href="#menu-specials">Specials</a></button>
+          </div>
+
+          <h2 class="menu-title menu-appetizers">Appetizers</h2>
+
         <div id="menu">
-            
             <div>
                 <div class="menu-item">
                     <div>
-                        <h4>Menu Item Name</h4>
-                    <p>Short description about the item. Yummy. Spicy. Allergens!!</p>
+                        <h4>Moroccan Salad | $10</h4>
+                        <p>Contains chickpeas, onions, bell peppers, spices</p>
+                        <!-- <p> &#127798 &#127798</p> -->
+                         <p>V GF DF</p>
                     </div>
                     <img src="images/lamp.png" alt="">
                 </div>
                 <div class="menu-item">
                     <div>
-                        <h4>Menu Item Name</h4>
-                    <p>Short description about the item. Yummy. Spicy. Allergens!!</p>
-                    </div>
-                    <img src="images/lamp.png" alt="">
-                </div>
-                <div class="menu-item">
-                    <div>
-                        <h4>Menu Item Name</h4>
-                    <p>Short description about the item. Yummy. Spicy. Allergens!!</p>
+                        <h4>Maakouda | $10</h4>
+                        <p>Contains potatoes, spices</p>
+                        <p>V GF DF</p>
                     </div>
                     <img src="images/lamp.png" alt="">
                 </div>
@@ -85,27 +89,76 @@
             <div>
                 <div class="menu-item">
                     <div>
-                        <h4>Menu Item Name</h4>
-                    <p>Short description about the item. Yummy. Spicy. Allergens!!</p>
+                        <h4>Focaccia | $9</h4>
+                        <p>Contains tomato, gluten, spices</p>
+                        <p>V DF</p>
                     </div>
                     <img src="images/lamp.png" alt="">
                 </div>
                 <div class="menu-item">
                     <div>
-                        <h4>Menu Item Name</h4>
-                    <p>Short description about the item. Yummy. Spicy. Allergens!!</p>
-                    </div>
-                    <img src="images/lamp.png" alt="">
-                </div>
-                <div class="menu-item">
-                    <div>
-                        <h4>Menu Item Name</h4>
-                    <p>Short description about the item. Yummy. Spicy. Allergens!!</p>
+                        <h4>Khubz | $4</h4>
+                        <p>Contains gluten, spices</p>
+                        <p>V DF</p>
                     </div>
                     <img src="images/lamp.png" alt="">
                 </div>
             </div>
-            
+
+        </div>
+
+        <h2 class="menu-title" id="menu-entrees">Entrees</h2>
+        <div id="menu">
+            <div>
+                <div class="menu-item">
+                    <div>
+                        <h4>Bissara | $13</h4>
+                        <p>Served with a side of either gluten free focaccia or gluten free khobz. Contains fava beans, onions, garlic, spices
+                        </p>
+                        <p>V GF DF</p>
+                    </div>
+                    <img src="images/bissara.jpg" alt="">
+                </div>
+                <div class="menu-item">
+                    <div>
+                        <h4>Menu Item Name</h4>
+                        <p>Short description about the item. Yummy. Spicy. Allergens!!</p>
+                    </div>
+                    <img src="images/lamp.png" alt="">
+                </div>
+                <div class="menu-item">
+                    <div>
+                        <h4>Menu Item Name</h4>
+                        <p>Short description about the item. Yummy. Spicy. Allergens!!</p>
+                    </div>
+                    <img src="images/lamp.png" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="menu-item">
+                    <div>
+                        <h4>Zaalouk | $15</h4>
+                        <p>Served with a side of either gluten free focaccia or gluten free khobz. Contains eggplant, tomatoes, garlic, olive oil, spices</p>
+                        <p>V GF DF &#127798</p>
+                    </div>
+                    <img src="images/Zaalouk.jpg" alt="">
+                </div>
+                <div class="menu-item">
+                    <div>
+                        <h4>Menu Item Name</h4>
+                        <p>Short description about the item. Yummy. Spicy. Allergens!!</p>
+                    </div>
+                    <img src="images/lamp.png" alt="">
+                </div>
+                <div class="menu-item">
+                    <div>
+                        <h4>Menu Item Name</h4>
+                        <p>Short description about the item. Yummy. Spicy. Allergens!!</p>
+                    </div>
+                    <img src="images/lamp.png" alt="">
+                </div>
+            </div>
+
         </div>
     </main>
 
