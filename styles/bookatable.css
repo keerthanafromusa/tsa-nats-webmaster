@@ -30,11 +30,11 @@ nav{
 
 
 .blob-banner{
-    background-color: #cb694e;
+    background-color: #c66161;
     height: 350px;
     width: 75%;
     margin: auto;
-    margin-top: 2%;
+    margin-top: 3%;
     text-align: center;
     padding: 150px;
     border-radius: 40px;
@@ -42,17 +42,17 @@ nav{
 
 .banner-circle1{
     border-radius: 50%;
-    background-color: #b8320e;
+    background-color: #600e17;
     height: 120px;
     width: 120px;
     position: absolute;
-    top: 60px;
+    top: 70px;
     left: 10%;
 }
 
 .banner-circle2{
     border-radius: 50%;
-    background-color: #b8320e;
+    background-color: #600e17;
     height: 120px;
     width: 120px;
     position: absolute;
@@ -78,7 +78,7 @@ nav{
 }
 
 .reseravation-item{
-    background-color: #a69bb4;
+    background-color: #e9acac;
     border: solid black 2px;
     height: 10%;
     width: 20%;

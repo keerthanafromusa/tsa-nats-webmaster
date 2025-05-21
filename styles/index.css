@@ -27,6 +27,10 @@ nav{
 .navbar a{
     color: white;
 }
+
+.navbar-toggler{
+    border-color: white;
+}
 /* nav{
     position: absolute;
     left: 80%;
@@ -66,7 +70,20 @@ nav{
     display: block;
     padding: 0;
 }
+
+@media(max-width: 768px){
+    #banner video{
+        height: 300px;
+    }
+}
   
+@media(max-width: 480px){
+    #banner video{
+        height: 200px;
+    }
+}
+
+
 #title{
     position: absolute;
     top: 50%;
@@ -245,14 +262,16 @@ footer{
     justify-content: space-evenly;
     color: white;
     padding: 10px;
-    margin-top: 10px;
     text-align: center;
+}
+
+footer h3{
+    margin-top: 20px;
 }
 
 #copyright{
     text-align: center;
     color: white;
-    
 }
 
 @media screen and (max-width: 800px) and (min-width: 400px) {

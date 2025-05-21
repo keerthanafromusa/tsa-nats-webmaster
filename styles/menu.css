@@ -33,7 +33,7 @@ nav{
     height: 350px;
     width: 75%;
     margin: auto;
-    margin-top: 2%;
+    margin-top: 3%;
     text-align: center;
     padding: 150px;
     border-radius: 40px;
@@ -45,7 +45,7 @@ nav{
     height: 120px;
     width: 120px;
     position: absolute;
-    top: 60px;
+    top: 70px;
     left: 10%;
 }
 
@@ -103,16 +103,6 @@ nav{
     color: white;
 }
 .menu-item{
-    /* background-color: #a69bb4;
-    border: solid black 2px;
-    height: 150px;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
-    padding: 25px;
-    border-radius: 25px;
-    align-items: center; */
-
     display: flex;
     justify-content: space-between;
     align-items: center;
