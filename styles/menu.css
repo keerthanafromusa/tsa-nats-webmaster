@@ -2,6 +2,9 @@ body{
     background-color: #ffddaa;
     margin: 0;
     padding: 0;
+    /* background-image: url("../images/redCarpetBg1.png");
+    background-size: cover;
+    background-repeat: no-repeat; */
 }
 
 h2{
@@ -28,6 +31,10 @@ nav{
     color: white;
 }
 
+.navbar-toggler{
+    border-color: white;
+}
+
 .blob-banner{
     background-color: #cb694e;
     height: 350px;
@@ -35,8 +42,12 @@ nav{
     margin: auto;
     margin-top: 3%;
     text-align: center;
-    padding: 150px;
     border-radius: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .banner-circle1{
@@ -80,6 +91,12 @@ nav{
     margin-top: 40px;
     text-align: center;
     margin-bottom: 20px;
+}
+
+#menu-key{
+    text-align: center;
+    margin-top: 20px;
+
 }
 
 #menu-categories{
@@ -143,4 +160,56 @@ footer h3{
 #copyright{
     text-align: center;
     color: white;
+}
+
+@media(max-width: 768px){
+    .banner-circle1, .banner-circle2{
+        display: none;
+    }
+
+    
+    #menu-key{
+        padding: 10px;
+    }
+    #menu{
+        gap: 0 !important;
+    }
+
+    .info{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 480px){
+    .banner-circle1, .banner-circle2{
+        display: none;
+    }
+
+
+
+    
+    #menu-categories{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #menu-key{
+        padding: 15px;
+    }
+
+    .menu-item{
+        width: 100%;
+    }
+
+    #menu{
+        gap: 0;
+    }
+
+    .menu-item{
+        width: 100%;
+    }
+
+    .info{
+        flex-direction: column;
+    }
 }

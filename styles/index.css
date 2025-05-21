@@ -72,6 +72,13 @@ nav{
     padding: 0;
 }
 
+#descrip{
+    background-color: #002534;
+    color: white;
+    padding: 20px 100px 30px 100px;
+    text-align: center;
+    font-size: 25px;
+}
 #space{
     background-color: black;
     height: 20px;
@@ -275,6 +282,10 @@ footer h3{
         height: 300px;
     }
 
+    #descrip{
+        font-size: 18px;
+    }
+
     #main-2{
         flex-direction: column;
         align-items: center;
@@ -284,6 +295,75 @@ footer h3{
     #collage{
         flex: 0 0 80%;
         max-width: 80%;
+        height: auto;
+    }
+
+    #three-big-words{
+        flex: 0 0 90%;
+        max-width: 90%;
+        align-items: center;
+    }
+
+    #three-big-words p{
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .logos-slide{
+        animation:none !important;
+    }
+
+    .logos:before, .logos:after{
+        background: none;
+    }
+
+    .logos-slide img{
+        height: 60px;
+    }
+
+    .line{
+        display: none;
+    }
+
+    .lantern-nav{
+        flex-direction: column;
+        margin-top: 90px;
+        gap: 30px;
+        justify-content: center;
+        align-items:center;
+    }
+
+    .lantern-button{
+        width: 150px;
+        height: 150px;
+    }
+
+    .info{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 480px){
+    #banner video{
+        height: 200px;
+    }
+
+    #descrip{
+        font-size: 18px;
+        padding: 20px 50px 10px 50px;
+    }
+
+    #main-2{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+
+    #collage{
+        flex: 0 0 60%;
+        max-width: 60%;
         height: auto;
     }
 
