@@ -338,8 +338,8 @@ footer img{
     }
 
     #collage{
-        flex: 0 0 30%;
-        max-width: 30%;
+        flex: 0 0 80%;
+        max-width: 80%;
         height: auto;
     }
 
