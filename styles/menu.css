@@ -2,9 +2,6 @@ body{
     background-color: #ffddaa;
     margin: 0;
     padding: 0;
-    /* background-image: url("../images/redCarpetBg1.png");
-    background-size: cover;
-    background-repeat: no-repeat; */
 }
 
 h2{
@@ -21,6 +18,11 @@ h3, h4, h5, h6, p{
     margin-bottom: 0;
 }
 
+
+#logo{
+    height: 80px;
+    width: 80px;
+}
 
 nav{
     background-color: #002534;
@@ -63,7 +65,7 @@ nav{
     height: 120px;
     width: 120px;
     position: absolute;
-    top: 70px;
+    top: 110px;
     left: 10%;
 }
 
@@ -73,7 +75,7 @@ nav{
     height: 120px;
     width: 120px;
     position: absolute;
-    top: 370px;
+    top: 400px;
     right: 10%;
 }
 

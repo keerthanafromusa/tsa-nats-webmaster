@@ -5,6 +5,7 @@ body{
     overflow-x: hidden;
 }
 
+
 h2{
     font-family: "Satisfy", cursive;
 
@@ -19,6 +20,10 @@ h3, h4, h5, h6, p{
     margin-bottom: 0;
 }
 
+#logo{
+    height: 80px;
+    width: 80px;
+}
 
 nav{
     background-color: #002534;
@@ -79,6 +84,20 @@ nav{
     text-align: center;
     font-size: 25px;
 }
+
+/* #descrip:hover{
+    cursor: url("../images/lampNewFF.png"), auto;
+} */
+
+#descrip1{
+    background-color: #002534;
+    color: white;
+    padding: 20px 100px 5px 100px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
 #space{
     background-color: black;
     height: 20px;
@@ -92,6 +111,11 @@ nav{
     gap: 20px;
     align-items: center;
     margin-top: 30px;
+}
+
+#main-2 h2{
+    font-size: 40px;
+    margin-bottom: 15px;
 }
 
 /* #collage{
@@ -132,13 +156,17 @@ nav{
 }
 
 
-@media(max-width: 480px){
+/* @media(max-width: 480px){
     #banner video{
         height: 200px;
     }
 
     #main-2{
         flex-direction: column;
+    }
+
+    #main-2 h2{
+        font-size: 40px;
     }
 
     #three-big-words{
@@ -160,7 +188,7 @@ nav{
     .logos-slide{
         animation:none !important;
     }
-}
+} */
   
 @keyframes slide {
     from {
@@ -318,8 +346,8 @@ footer img{
     }
 
     #three-big-words{
-        flex: 0 0 90%;
-        max-width: 90%;
+        flex: 100%;
+        /* max-width: 90%; */
         align-items: center;
     }
 
@@ -385,10 +413,21 @@ footer img{
         max-width: 80%;
         height: auto;
     }
-
-    #three-big-words{
+ #three-big-words{
         flex: 0 0 90%;
         max-width: 90%;
+        align-items: center;
+    }
+
+    #three-big-words p{
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    #three-big-words{
+        width: 100%;
+        margin-right: 0;
         align-items: center;
     }
 

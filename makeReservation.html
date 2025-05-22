@@ -20,6 +20,8 @@
     <div class="banner-container">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid ">
+              <img src="images/Sufra.png" alt="" id="logo">
+
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -33,6 +35,9 @@
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="aboutus.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="resources.html">Website Resources</a>
                   </li>
                 </ul>
               </div>
@@ -110,34 +115,21 @@
         <div class="popup-catering" id="popup-catering">
             <h2>Event Details</h2>
             <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Event Name" aria-label="event-name" aria-describedby="basic-addon1">
+              <input type="text" class="form-control" placeholder="Contact Name" aria-label="event-name" aria-describedby="basic-addon1">
             </div>
-            
+
             <div class="input-group mb-3">
-              <input type="tel" class="form-control" placeholder="Contact Number" aria-label="Contact Number" aria-describedby="basic-addon2">
+              <input type="tel" class="form-control" placeholder="Contact Number" aria-label="contact-number" aria-describedby="basic-addon2">
+            </div>
+
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Event Name" aria-label="event-name" aria-describedby="basic-addon3">
             </div>
 
             <div>
                 <input type="number" inputmode="numeric" pattern="\d*" id="" placeholder="Number of guests">
             </div>
 
-            <div id="num-of-items">
-              <div>
-                <label for="appetizer-num-picker">Please select an approximate number of Appetizer Items:</label><input type="number" inputmode="numeric" pattern="\d*" id="appetizer-num-picker" placeholder="Number of Appetizers">
-              </div>
-              <div>
-                <label for="entrees-num-picker">Please select an approximate number of Entree Items:</label><input type="number" inputmode="numeric" pattern="\d*" id="entrees-num-picker" placeholder="Number of Entrees">
-              </div>
-              <div>
-                <label for="dessert-num-picker">Please select an approximate number of Dessert Items:</label><input type="number" inputmode="numeric" pattern="\d*" id="dessert-num-picker" placeholder="Number of Desserts">
-              </div>
-              <div>
-                <label for="entrees-num-picker">Please select an approximate number of Dessert Items: </label><input type="number" inputmode="numeric" pattern="\d*" id="entrees-num-picker" placeholder="Number of Entrees">
-              </div>
-              <div>
-                <label for="drinks-num-picker">Please select an approximate number of Drink Items: </label><input type="number" inputmode="numeric" pattern="\d*" id="drinks-num-picker" placeholder="Number of Drinks">
-              </div>
-            </div>
             <label for="datetime-picker">Select a date and time: </label>
             <input type="datetime-local" id="datetime-picker">
 
