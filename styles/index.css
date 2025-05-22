@@ -279,8 +279,6 @@ display: inline-block;
 }
 
 
-
-
 footer{
     background-color: #600e17;
     height: 20%;
@@ -340,7 +338,7 @@ footer img{
     }
 
     #collage{
-        flex: 0 0 80%;
+        flex: 0 0 30%;
         max-width: 80%;
         height: auto;
     }

@@ -123,6 +123,10 @@ nav{
 #table button{
     margin-top: 80px;
 }
+
+#catering button{
+    margin-top: 30px;
+}
 .reseravation-item button{
     background-color: #e36d4a;
     border-radius: 30px;
